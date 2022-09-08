@@ -80,7 +80,8 @@
 }
 
 .frontend-link,
-.backend-link {
+.backend-link,
+.demo-link {
   padding: 10px;
   border: 1px solid white;
   width: max-content;
@@ -92,7 +93,8 @@
 }
 
 .frontend-link:hover,
-.backend-link:hover {
+.backend-link:hover,
+.demo-link:hover {
   border-radius: 20%;
   cursor: url("../../assets/cursor.png"), default;
 }
@@ -107,7 +109,7 @@
   border: 1px solid #fff;
   border-radius: 50%;
   padding: 3rem;
-  margin: 15rem 0 0 45%;
+  margin: 20rem 0 0 45%;
 }
 
 .image-container {
@@ -226,7 +228,8 @@
     flex-direction: column;
   }
 
-  .frontend-link {
+  .frontend-link,
+  .backend-link {
     margin-bottom: 0.5rem;
   }
 }
@@ -261,7 +264,7 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px){
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .my-work {
     font-size: 94px;
   }

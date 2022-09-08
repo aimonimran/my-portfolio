@@ -26,7 +26,7 @@ const Projects = () => {
               </div>
               <hr />
 
-              <div data-aos="zoom-in-right" className="project-container">
+              <div data-aos="zoom-in" className="project-container">
                 <div className="info-container">
                   <div className="content">
                     <h1 className="project-title">{project.title}</h1>
@@ -34,6 +34,7 @@ const Projects = () => {
                       <p>{project.desc}</p>
                       <p>{project.technicalDesc}</p>
                       <p>{project.updateDesc}</p>
+                      <p style={{textTransform: 'uppercase'}}>{project.note}</p>
                     </p>
                     <div>
                       <h2 className="tech-used">Technologies Used</h2>
@@ -73,6 +74,13 @@ const Projects = () => {
                         <div className="backend-link">
                           <a href={project.backend} target="_blank">
                             <AiFillGithub /> Backend Code
+                          </a>
+                        </div>
+                      )}
+                      {project.liveDemo !== "" && (
+                        <div className="demo-link">
+                          <a href={project.liveDemo} target="_blank">
+                            Demo
                           </a>
                         </div>
                       )}
