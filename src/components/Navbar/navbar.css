@@ -1,0 +1,43 @@
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.8rem 1.7rem;
+  border-radius: 2rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+  top: 1rem;
+}
+
+.navlink {
+  color: #fff;
+  background: transparent;
+  padding: 0.45rem;
+  font-size: 1.1rem;
+  display: flex;
+  border-radius: 50%;
+  transition: all 0.6s ease;
+}
+
+.navlink:hover {
+  background: #fff;
+  opacity: 0.9;
+  color: #000;
+}
+
+.navlink.active {
+  background: #fff;
+  color: #000;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  nav {
+    padding: 0.6rem 1rem;
+  }
+}

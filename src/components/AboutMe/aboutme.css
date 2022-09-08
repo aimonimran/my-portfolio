@@ -1,0 +1,40 @@
+#about {
+  padding: 3% 10% 0 9%;
+}
+
+.who-am-i {
+  font-size: 110px;
+  text-transform: uppercase;
+  color: pink;
+  margin-bottom: -2rem;
+}
+
+.intro-name {
+  font-size: 70px;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  font-size: 45px;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #about {
+    padding: 5% 0 0 4%;
+  }
+
+  .who-am-i {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+
+  .intro-name {
+    font-size: 23px;
+  }
+
+  .intro {
+    font-size: 17px;
+    padding-right: 0.3rem;
+  }
+}

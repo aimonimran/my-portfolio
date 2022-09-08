@@ -1,0 +1,79 @@
+#contact {
+  padding: 0.2% 10% 0 9%;
+}
+
+.contact-me {
+  font-size: 110px;
+  text-transform: uppercase;
+  color: pink;
+}
+
+.available {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.email-scroll {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email {
+  font-size: 50px;
+  color: pink;
+  margin-bottom: -3rem;
+}
+
+.email:hover {
+  color: #fff;
+}
+
+.scroll-up {
+  font-size: 30px;
+  position: absolute;
+  right: 40px;
+  animation: up-down 1s infinite;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #contact {
+    padding: 5% 0 0 5%;
+  }
+
+  .contact-me {
+    font-size: 40px;
+  }
+
+  .available {
+    font-size: 20px;
+  }
+
+  .email {
+    font-size: 20px;
+  }
+
+  .scroll-up {
+    right: 10px;
+    font-size: 25px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .contact-me {
+    font-size: 99px;
+  }
+}
