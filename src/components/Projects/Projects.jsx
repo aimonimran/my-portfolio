@@ -2,12 +2,19 @@ import "./projects.css";
 import { AiFillGithub } from "react-icons/ai";
 import { BsArrowDown } from "react-icons/bs";
 import { projects } from "../../data";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Projects = () => {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
+  
   return (
     <div id="work">
       <div>
-        <h1 className="my-work">My projects</h1>
+        <h1 data-aos="fade-up" className="my-work">My projects</h1>
         {projects.map((project) => (
           <div key={project.id}>
             <div className="project-one">
@@ -19,7 +26,7 @@ const Projects = () => {
               </div>
               <hr />
 
-              <div className="project-container">
+              <div data-aos="zoom-in-right" className="project-container">
                 <div className="info-container">
                   <div className="content">
                     <h1 className="project-title">{project.title}</h1>
@@ -78,7 +85,7 @@ const Projects = () => {
               </div>
             </div>
 
-            <div className="image-container">
+            <div data-aos="fade-up" className="image-container">
               <div className="blank"></div>
               <div className="project-images">
                 <img

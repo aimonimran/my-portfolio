@@ -1,10 +1,17 @@
 import "./contact.css";
 import { AiOutlineUp } from "react-icons/ai";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({});
+  }, []);
+  
   return (
     <div id="contact">
-      <h1 className="contact-me">CONTACT ME</h1>
+      <h1 data-aos="fade-up" className="contact-me">CONTACT ME</h1>
       <p className="available">
         I'm available for work.
         <br />
