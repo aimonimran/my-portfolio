@@ -20,7 +20,7 @@ const AboutMe = () => {
         I'm a web developer oriented to frontend, I rely on the most outstanding
         opensource library
         <b>
-          <i>React</i>
+          <i> React</i>
         </b>
         . I'm passionate about creating modern websites with modern tools. I
         combine clean and simple code with attractive design

@@ -101,11 +101,13 @@ const Projects = () => {
                   src={project.imageone}
                   alt="Project-image"
                 />
-                <img
-                  className="project-image top-image"
-                  src={project.imagetwo}
-                  alt="Project-image"
-                />
+                {project.imagetwo !== "" && (
+                  <img
+                    className="project-image top-image"
+                    src={project.imagetwo}
+                    alt="Project-image"
+                  />
+                )}
               </div>
             </div>
           </div>

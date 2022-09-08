@@ -20,7 +20,7 @@
 
 .marquee div {
   font-size: 130px;
-  animation: animate 420s linear infinite;
+  animation: animate 480s linear infinite;
 }
 
 .marquee:hover {
