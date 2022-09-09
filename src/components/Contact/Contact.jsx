@@ -1,12 +1,10 @@
-import { useEffect, useRef } from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { AiFillLinkedin } from "react-icons/ai";
+import React, { useEffect, useRef } from "react";
 import { AiOutlineUp } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
-import Input from "./Input";
-import "./contact.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import "./contact.css";
+import Input from "./Input";
 
 const Contact = () => {
   useEffect(() => {
@@ -20,10 +18,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_3t4wp7m",
-        "template_hmrtyrf",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "iJ3TZVJCy1BKjRM5-"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -74,35 +72,6 @@ const Contact = () => {
             </div>
           </form>
         </div>
-        {/* <div className="socials-container">
-          <div className="socials">
-            <p className="available">
-              I'm available for work.
-              <br />
-              Drop me a word.
-            </p>
-            <p className="email">aimon.imran@gmail.com</p>
-            <div className="scroll-up">
-              <a href="#">
-                <AiOutlineUp />
-              </a>
-            </div>
-            <a
-              href="https://github.com/aimonimran"
-              target="_blank"
-              title="GitHub"
-            >
-              <AiFillGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/aimon-imran-420b091a6/"
-              target="_blank"
-              title="LinkedIn"
-            >
-              <AiFillLinkedin />
-            </a>
-          </div>
-        </div> */}
       </div>
     </div>
   );
