@@ -67,7 +67,7 @@ export const projects = [
     tech: ["HTML5", "CSS3", "JavaScript (ES6)", "React.js"],
     frontend: "https://github.com/aimonimran/todo-app",
     backend: "",
-    liveDemo: "https://friendly-stroopwafel-891f36.netlify.app",
+    liveDemo: "https://resilient-capybara-ce7b86.netlify.app",
     imageone: todoimage,
     imagetwo: "",
   },
