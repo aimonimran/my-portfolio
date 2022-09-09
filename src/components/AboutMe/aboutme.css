@@ -18,6 +18,10 @@
   font-size: 45px;
 }
 
+span {
+  color: #ffd699;
+}
+
 /* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   #about {

@@ -8,28 +8,52 @@
   color: pink;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 1.5rem;
+  resize: none;
+  color: #fff;
+}
+
+.info-container {
+  margin-top: -4rem;
+}
+
 .available {
-  font-size: 50px;
+  font-size: 27px;
   font-weight: bold;
 }
 
-.email-scroll {
+.button-scroll {
   display: flex;
   justify-content: space-between;
 }
 
-.email {
-  font-size: 50px;
-  color: pink;
-  margin-bottom: -3rem;
-}
-
-.email:hover {
-  color: #fff;
-}
-
 .scroll-up {
   font-size: 30px;
+  font-weight: bold;
   position: absolute;
   right: 40px;
   animation: up-down 1s infinite;
@@ -57,12 +81,25 @@
     font-size: 40px;
   }
 
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .info-container {
+    padding: 5% 0 0 2%;
+    margin-top: -25px;
+  }
+
+  .form-container {
+    width: 80%;
+  }
+
   .available {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .email {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .scroll-up {
@@ -72,8 +109,21 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .contact-me {
     font-size: 99px;
+  }
+  .info-container {
+    padding: 5% 0 0 1%;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .form-container {
+    width: 70%;
   }
 }
