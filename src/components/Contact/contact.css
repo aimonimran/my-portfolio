@@ -13,10 +13,14 @@
   flex-direction: column;
 }
 
+span {
+  color: #ffd699;
+}
+
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 55%;
   margin-bottom: 2rem;
 }
 
@@ -91,7 +95,7 @@ textarea {
   }
 
   .form-container {
-    width: 80%;
+    width: 85%;
   }
 
   .available {
@@ -113,8 +117,13 @@ textarea {
   .contact-me {
     font-size: 99px;
   }
+
   .info-container {
     padding: 5% 0 0 1%;
+  }
+
+  .available {
+    font-size: 26px;
   }
 
   .form-container {
