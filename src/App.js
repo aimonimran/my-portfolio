@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* {loading ? (
+      {loading ? (
         <Preloader />
       ) : (
         <div>
@@ -30,13 +30,7 @@ function App() {
           <Projects />
           <Contact />
         </div>
-      )} */}
-      <Navbar />
-      <Home />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Contact />
+      )}
     </div>
   );
 }
