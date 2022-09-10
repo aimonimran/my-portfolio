@@ -25,7 +25,7 @@ const AboutMe = () => {
           </i>
         </b>
         . I'm passionate about creating modern websites with modern tools. I
-        combine clean and simple code with attractive design
+        combine clean and simple code with attractive design.
       </h3>
       <h3 data-aos="fade-up" className="intro">
         I'm currently pursuing my degree in <span>Computer Science</span> from

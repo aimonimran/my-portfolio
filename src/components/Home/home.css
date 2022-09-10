@@ -56,6 +56,7 @@
 
 .clipart {
   width: 320px;
+  /* padding: 0 0 25% 40%; */
   padding: 0 0 25% 40%;
 }
 
@@ -118,6 +119,6 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .clipart {
-    padding: 0 0 25% 9%;
+    padding: 0 0 25% 30%;
   }
 }
