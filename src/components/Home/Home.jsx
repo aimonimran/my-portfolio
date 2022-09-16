@@ -1,5 +1,5 @@
 import "./home.css";
-import CV from "../../assets/cv.pdf";
+import CV from "../../assets/frontend-developer-cv.pdf";
 import clipart from "../../assets/hey.png";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
