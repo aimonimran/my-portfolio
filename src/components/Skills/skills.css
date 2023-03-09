@@ -1,91 +1,86 @@
 #skills {
-  padding: 0.2% 10% 0 9%;
+	padding: 0.2% 10% 0 9%;
 }
 
 .my-skills {
-  font-size: 110px;
-  text-transform: uppercase;
-  color: pink;
+	font-size: 110px;
+	text-transform: uppercase;
+	color: pink;
 }
 
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  border: 3px solid #fff;
-  border-radius: 1rem;
-  transition: all 0.5s ease;
-  margin-top: -2rem;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0px 40px 0px;
-  transition: all 0.6s ease;
+	display: flex;
+	flex-wrap: wrap;
+	border: 3px solid #fff;
+	border-radius: 1rem;
+	transition: all 0.5s ease;
+	margin-top: -2rem;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 0px 40px 0px;
+	transition: all 0.6s ease;
 }
 
 .skills-container:hover {
-  border: 3px solid #fff;
-  background: #fff;
-  color: #000;
-  cursor: url("../../assets//cursor-black.png"), default;
+	border: 3px solid #fff;
+	background: #fff;
+	color: #000;
+	cursor: url('../../assets//cursor-black.png'), default;
 }
 
 .skill-div {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
-  padding: 40px;
+	display: flex;
+	align-items: center;
+	margin-right: 1rem;
+	padding: 40px;
 }
 
 .skill-name-experience {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .skills__details-icon {
-  margin: 5px 15px 0 0;
-  width: 30px;
-  height: 30px;
+	margin: 5px 15px 0 0;
+	width: 30px;
+	height: 30px;
 }
 
 .skill-name {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.experience {
-  color: grey;
-  margin: -2.5rem 0 0 85px;
+	font-size: 30px;
+	font-weight: bold;
 }
 
 .scroll-up {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 /* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #skills {
-    padding: 5% 4% 0 4%;
-  }
+	#skills {
+		padding: 5% 4% 0 4%;
+	}
 
-  .my-skills {
-    font-size: 40px;
-    margin-bottom: 4rem;
-  }
+	.my-skills {
+		font-size: 40px;
+		margin-bottom: 4rem;
+	}
 
-  .skills-container {
-    border: 1px solid #fff;
-    justify-content: flex-start;
-    padding: 0 0 10px 0;
-  }
-  
-  .skill-div {
-    padding: 10px;
-  }
+	.skills-container {
+		border: 1px solid #fff;
+		justify-content: flex-start;
+		padding: 0 0 10px 0;
+	}
 
-  .skill-name {
-    font-size: 18px;
-  }
+	.skill-div {
+		padding: 10px;
+	}
 
-  .experience {
-    margin: -1rem 0 0 55px;
-  }
+	.skill-name {
+		font-size: 18px;
+	}
+
+	.experience {
+		margin: -1rem 0 0 55px;
+	}
 }
