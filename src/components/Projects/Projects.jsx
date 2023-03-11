@@ -47,7 +47,7 @@ const Projects = () => {
 														<li>{project.tech[0]}</li>
 														<li>{project.tech[1]}</li>
 														<li>{project.tech[2]}</li>
-														<li>{project.tech[3]}</li>
+														{project.tech.length >= 4 && <li>{project.tech[3]}</li>}
 														{project.tech.length >= 5 && <li>{project.tech[4]}</li>}
 													</ul>
 												</div>
