@@ -34,13 +34,23 @@ const Projects = () => {
 										<h1 className='project-title'>{project.title}</h1>
 										<p className='project-concept'>
 											<p>{project.desc}</p>
-											<p>{project.technicalDesc}</p>
-											<p>{project.updateDesc}</p>
-											<p style={{ textTransform: 'uppercase' }}>{project.note}</p>
 										</p>
-										<div>
-											<h2 className='tech-used'>Technologies Used</h2>
 
+										<div>
+											<h2>Project Achievements</h2>
+											<ul>
+												{project.achievements.map((achievement) => (
+													<li>{achievement}</li>
+												))}
+											</ul>
+										</div>
+										<div>
+											<h2>Project Outcome</h2>
+											<p>{project.outcome}</p>
+											<p style={{ textTransform: 'uppercase' }}>{project.note}</p>
+										</div>
+										<div>
+											<h2 className='tech-used'>Tech Stack</h2>
 											<div className='ul'>
 												<div className='ul-one'>
 													<ul>
@@ -64,6 +74,7 @@ const Projects = () => {
 												)}
 											</div>
 										</div>
+
 										<div className='link'>
 											<div className='frontend-link'>
 												<a href={project.frontend} target='_blank' rel='noreferrer'>

@@ -1,5 +1,5 @@
 import './home.css';
-import CV from '../../assets/AimonImran-ReactDeveloper.pdf';
+import CV from '../../assets/AimonImran-JuniorFrontendDeveloper.pdf';
 import clipart from '../../assets/hey.png';
 import { AiOutlineDown } from 'react-icons/ai';
 import { socials } from '../../data';
