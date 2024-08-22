@@ -5,6 +5,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { MdOutlineComputer } from "react-icons/md";
 import { HiOutlineBadgeCheck } from "react-icons/hi";
 import { AiOutlineMessage } from "react-icons/ai";
+import { IoBriefcaseOutline } from "react-icons/io5";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -33,6 +34,14 @@ const Nav = () => {
         className={activeNav === "#skills" ? "active navlink" : "navlink"}
       >
         <HiOutlineBadgeCheck />
+      </a>
+      <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        title="My Experience"
+        className={activeNav === "#experience" ? "active navlink" : "navlink"}
+      >
+        <IoBriefcaseOutline />
       </a>
       <a
         href="#work"

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { frontend } from './../../data';
+import { skills } from './../../data';
 import { HiOutlineBadgeCheck } from 'react-icons/hi';
 import './skills.css';
 import Aos from 'aos';
@@ -15,16 +15,21 @@ const Skills = () => {
 			<h1 data-aos='fade-up' className='my-skills'>
 				My Skills
 			</h1>
-			<div className='skills-container'>
-				{frontend.map((skill) => (
-					<div key={skill.id} className='skill-name-experience'>
-						<div className='skill-div'>
-							<HiOutlineBadgeCheck className='skills__details-icon' />
-							<div className='skill-name'>{skill.skill}</div>
-						</div>
+			{skills.map(skill => (
+				<div className='skill-main-container'>
+					<h1 className='skill-heading'>{skill.title}</h1>
+					<div className='skills-container'>
+						{skill.tech.map((item, idx) => (
+							<div key={idx} className='skill-name-experience'>
+								<div className='skill-div'>
+									<HiOutlineBadgeCheck className='skills__details-icon' />
+									<div className='skill-name'>{item}</div>
+								</div>
+							</div>
+						))}
 					</div>
-				))}
-			</div>
+				</div>
+			))}
 		</div>
 	);
 };

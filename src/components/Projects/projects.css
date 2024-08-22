@@ -129,10 +129,13 @@
 	cursor: url('../../assets/cursor-black.png'), default;
 }
 
+.project-image-container {
+	height: 200px;
+}
+
 .project-image {
 	width: 800px;
 	position: absolute;
-	border: 5px solid #fff;
 }
 
 .top-image {
@@ -142,6 +145,10 @@
 
 .top-image:hover {
 	opacity: 1;
+}
+
+.sm-project-image {
+	display: none;
 }
 
 @keyframes animate {
@@ -159,6 +166,24 @@
 	}
 }
 
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+	.sm-project-image {
+		display: none;
+	}
+	
+	.arrow {
+		display: none;
+	}
+
+	.project-image-container {
+		display: none;
+	}
+
+	.project-image {
+		width: 400px;
+	}
+}
+
 /* Small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	.my-work {
@@ -168,6 +193,14 @@
 
 	.marquee div {
 		font-size: 30px;
+	}
+
+	.sm-project-image {
+		display: block;
+	}
+
+	.project-image-container {
+		display: none;
 	}
 
 	.project-number {
@@ -183,7 +216,6 @@
 
 	.project-image {
 		width: 250px;
-		border: 1.5px solid #fff;
 	}
 
 	.blank {
@@ -219,7 +251,8 @@
 		flex-direction: column;
 	}
 
-	.ul-two {
+	.ul-two,
+	.ul-three {
 		margin-top: -2rem;
 	}
 
@@ -231,7 +264,7 @@
 	.frontend-link,
 	.backend-link {
 		margin-bottom: 0.5rem;
-	}
+	} 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

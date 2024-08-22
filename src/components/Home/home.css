@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap'); */
 
 .home-container {
 	display: flex;
@@ -72,14 +72,10 @@
 	}
 }
 
-/* Small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	.home-container {
-		padding: 20% 0 0 4%;
-	}
-
-	.name {
-		font-size: 65px;
+		height: 80vh;
+		padding: 20% 4% 0 4%;
 	}
 
 	.info-container-right {
@@ -88,6 +84,17 @@
 
 	.info-container-left {
 		width: 100%;
+	}
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.home-container {
+		padding: 20% 0 0 4%;
+	}
+
+	.name {
+		font-size: 65px;
 	}
 
 	.about-me {

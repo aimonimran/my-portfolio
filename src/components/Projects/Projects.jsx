@@ -54,21 +54,26 @@ const Projects = () => {
 											<div className='ul'>
 												<div className='ul-one'>
 													<ul>
-														<li>{project.tech[0]}</li>
-														<li>{project.tech[1]}</li>
-														<li>{project.tech[2]}</li>
-														{project.tech.length >= 4 && <li>{project.tech[3]}</li>}
-														{project.tech.length >= 5 && <li>{project.tech[4]}</li>}
+														{project.tech.slice(0, 5).map((tech, index) => (
+															<li key={tech.id}>{tech}</li>
+														))}
 													</ul>
 												</div>
 												{project.tech.length > 5 && (
 													<div className='ul-two'>
 														<ul>
-															<li>{project.tech[5]}</li>
-															<li>{project.tech[6]}</li>
-															<li>{project.tech[7]}</li>
-															<li>{project.tech[8]}</li>
-															<li>{project.tech[9]}</li>
+															{project.tech.slice(5, 10).map((tech, index) => (
+																<li key={tech.id}>{tech}</li>
+															))}
+														</ul>
+													</div>
+												)}
+												{project.tech.length > 10 && (
+													<div className='ul-three'>
+														<ul>
+															{project.tech.slice(10).map((tech, index) => (
+																<li key={tech.id}>{tech}</li>
+															))}
 														</ul>
 													</div>
 												)}
@@ -76,19 +81,19 @@ const Projects = () => {
 										</div>
 
 										<div className='link'>
-											<div className='frontend-link'>
+											{project.frontend && <div className='frontend-link'>
 												<a href={project.frontend} target='_blank' rel='noreferrer'>
 													<AiFillGithub /> Frontend Code
 												</a>
-											</div>
-											{project.backend !== '' && (
+											</div>}
+											{project.backend && (
 												<div className='backend-link'>
 													<a href={project.backend} target='_blank' rel='noreferrer'>
 														<AiFillGithub /> Backend Code
 													</a>
 												</div>
 											)}
-											{project.liveDemo !== '' && (
+											{project.liveDemo && (
 												<div className='demo-link'>
 													<a href={project.liveDemo} target='_blank' rel='noreferrer'>
 														Demo
@@ -105,12 +110,18 @@ const Projects = () => {
 						</div>
 
 						{project.imageone || project.imagetwo ? (
-							<div data-aos='fade-up' className='image-container'>
-								<div className='blank'></div>
+							<div className='image-container'>
+								<div className='blank' />
 								<div className='project-images'>
 									<img className='project-image' src={project.imageone} alt='Project' />
-									{project.imagetwo !== '' && (
-										<img className='project-image top-image' src={project.imagetwo} alt='Project' />
+									{project.imagetwo && (
+										<>
+											<div className='project-image-container'>
+												<img className='project-image top-image' src={project.imagetwo} alt='Project' />
+											</div>
+
+											<img className='sm-project-image project-image top-image' src={project.imagetwo} alt='Project' />
+										</>
 									)}
 								</div>
 							</div>

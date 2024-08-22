@@ -11,28 +11,28 @@ const Contact = () => {
     Aos.init({});
   }, []);
 
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
+  //   emailjs
+  //     .sendForm(
+  //       process.env.REACT_APP_EMAILJS_SERVICE_ID,
+  //       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+  //       form.current,
+  //       process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //   e.target.reset();
+  // };
 
   return (
     <div id="contact">
@@ -45,10 +45,10 @@ const Contact = () => {
           <p className="available">
             I'm available for work.
             <br />
-            Drop me a word at <span>aimon.imran@gmail.com</span>.
+            Drop me a word at <span>aimon.imran@gmail.com</span> or <br /> contact me on <span>+971 54 442 6992</span>.
           </p>
         </div>
-        <div className="form-container">
+        {/* <div className="form-container">
           <form ref={form} onSubmit={sendEmail}>
             <Input name="name" type="text" placeholder="Name" />
             <Input name="email" type="email" placeholder="Email Address" />
@@ -71,10 +71,10 @@ const Contact = () => {
               </div>
             </div>
           </form>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default React.memo(Contact);

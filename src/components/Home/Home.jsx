@@ -1,5 +1,4 @@
 import './home.css';
-import CV from '../../assets/AimonImran-JuniorFrontendDeveloper.pdf';
 import clipart from '../../assets/hey.png';
 import { AiOutlineDown } from 'react-icons/ai';
 import { socials } from '../../data';
@@ -24,12 +23,11 @@ const Home = () => {
 				<div className='info'>
 					<h1 className='name'>Aimon Imran</h1>
 					<h4 className='about-me'>
-						I'm a React developer and a Computer Science student, constantly looking for new
-						opportunities to expand my skill set.
+						A Full Stack Developer Crafting Seamless Digital Experiences from Frontend to Backend.
 					</h4>
 				</div>
 				<div className='cta'>
-					<a href={CV} className='btn' download>
+					<a href='./AimonResume-FullStackDeveloper.pdf' className='btn' download>
 						Download CV
 					</a>
 					<a href='#contact' className='btn'>

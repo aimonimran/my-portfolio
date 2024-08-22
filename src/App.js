@@ -6,6 +6,7 @@ import Preloader from "./components/Preloader/Preloader";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
+import Experience from "./components/Experience";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -14,8 +15,8 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
-  }, []);
+    }, 700);
+  }, [setLoading]);
 
   return (
     <div className="App">
@@ -27,6 +28,7 @@ function App() {
           <Home />
           <AboutMe />
           <Skills />
+          <Experience />
           <Projects />
           <Contact />
         </div>
