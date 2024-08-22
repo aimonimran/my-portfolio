@@ -120,7 +120,7 @@ export const projects = [
 			optimized form handling reduced errors by 35%, leading to a smoother user experience and positive feedback.`,
 		note: '',
 		tech: ['Next.js', 'Tailwind CSS', 'Next Auth', 'Stripe API', 'React Query', 'Prisma', 'PostgreSQL', 'Cloudflare', 'Zustand', 'Mailgun', 'React Hook Form', 'Yup'],
-		liveDemo: 'www.makery.ai',
+		liveDemo: 'https://www.makery.ai',
 		imageone: makery,
 		imagetwo: makerytwo
 	},
