@@ -2,7 +2,6 @@ import readingroomimage from './assets/readingroom.png';
 import readingroomimagetwo from './assets/readingroom-2.png';
 import quizimage from './assets/quizapp.PNG';
 import quizimagetwo from './assets/quizapp-2.png';
-import todoimage from './assets/todo.PNG';
 import huluclone from './assets/hulu-clone.png';
 import makery from './assets/makery.png'
 import makerytwo from './assets/makery-2.png'
@@ -412,12 +411,14 @@ export const skills = [
 			'JavaScript',
 			'Zustand',
 			'Redux',
+			'Context API',
 			'Tailwind CSS',
 			'styled-components',
-			'LESS',
 			'Material UI',
 			'BootStrap',
+			'SCSS',
 			'Ant Design',
+			'LESS',
 			'CSS3',
 			'HTML5'
 		]
@@ -433,7 +434,7 @@ export const skills = [
 	},
 	{
 		title: 'Tools & Platforms',
-		tech: ['GitHub', 'Visual Studio Code', 'Asana', 'Jira', 'Slack', 'XCode', 'TestFlight']
+		tech: ['GitHub', 'Visual Studio Code', 'Postman', 'XCode', 'TestFlight', 'Asana', 'Jira', 'Slack']
 	},
 	{
 		title: 'API and Payment Integration',
