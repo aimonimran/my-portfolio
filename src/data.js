@@ -17,6 +17,32 @@ import { AiFillLinkedin } from 'react-icons/ai';
 export const experience = [
 	{
 		id: 1,
+		position: 'Front-End Developer',
+		company: 'Tektronix Technology Systems LLC.',
+		duration: 'September 2024 - Present',
+		description: [
+			'Collaborated with cross-functional teams to translate designs into high-quality code using React.js, TypeScript, and Tailwind CSS.',
+			'Optimized applications for maximum speed and scalability.',
+			'Participated in code reviews and provided constructive feedback.',
+			'Wrote clean, maintainable, and well-documented code.',
+			'Maintained a 95% client satisfaction rate through tailored solutions and effective communication.',
+			'Streamlined development processes by managing the codebase with Git.',
+		],
+		tech: [
+			'React.js',
+			'TypeScript',
+			'JavaScript',
+			'Tailwind CSS',
+			'RESTful APIs',
+			'Zustand',
+			'React Query',
+			'React Hooks',
+			'Bootstrap',
+			'Prettier',
+		]
+	},
+	{
+		id: 2,
 		position: 'Software Engineer',
 		company: 'AppTycoons',
 		duration: 'January 2023 - August 2024',
@@ -40,6 +66,8 @@ export const experience = [
 			'PostgreSQL',
 			'RESTful APIs',
 			'Zustand',
+			'React Query',
+			'React Hooks',
 			'Redux',
 			'Stripe API',
 			'Material UI',
@@ -54,7 +82,7 @@ export const experience = [
 		]
 	},
 	{
-		id: 2,
+		id: 3,
 		position: 'ReactJS Developer',
 		company: 'Design Henge',
 		duration: 'November 2022 - December 2022',
@@ -70,7 +98,7 @@ export const experience = [
 		]
 	},
 	{
-		id: 3,
+		id: 4,
 		position: 'Junior React Developer',
 		company: 'Agilelan Limited',
 		duration: 'January 2022 - October 2022',
