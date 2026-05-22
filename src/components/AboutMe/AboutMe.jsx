@@ -17,10 +17,10 @@ const AboutMe = () => {
         Hello, I am <span>Aimon Imran</span>.
       </h2>
       <h3 data-aos="fade-up" className="intro">
-        I am a skilled <span>Full Stack Developer </span>with extensive experience in creating high-performance, responsive applications using modern technologies like <span>Next.js, React.js, and React Native</span>. My expertise spans both frontend and backend development. I excel in delivering clean, maintainable code and have a proven track record of building scalable and robust solutions.
+        I am a skilled <span>Frontend Developer</span> specializing in building high-performance web and mobile applications using <span>React.js, Next.js, React Native, and TypeScript</span>. I excel at crafting reusable components, managing state, and optimizing performance to deliver seamless user experiences.
       </h3>
       <h3 data-aos="fade-up" className="intro">
-        Throughout my career, I've gained a deep understanding of the full development lifecycle, from initial design to deployment. My work demonstrates my ability to enhance user engagement and optimize application performance. I&apos;m proficient in integrating tools like <span>Prisma</span> for database management, <span>Next Auth</span> for authentication, and <span>Stripe</span> for payments, which have led to significant improvements in user satisfaction and transaction success rates.
+        Throughout my career, I&apos;ve built production-grade systems including a <span>Visitor Management System</span> with hardware integrations and UAE PASS authentication, integrated payment solutions with <span>Stripe</span>, and collaborated with cross-functional teams on scalable RESTful API-driven applications. I&apos;m adept at delivering maintainable code and smooth user experiences.
       </h3>
     </div>
   );

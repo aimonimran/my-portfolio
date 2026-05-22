@@ -23,11 +23,11 @@ const Home = () => {
 				<div className='info'>
 					<h1 className='name'>Aimon Imran</h1>
 					<h4 className='about-me'>
-						A Full Stack Developer Crafting Seamless Digital Experiences from Frontend to Backend.
+						A Frontend Developer Crafting Seamless Digital Experiences.
 					</h4>
 				</div>
 				<div className='cta'>
-					<a href='./AimonResume-FullStackDeveloper.pdf' className='btn' download>
+					<a href='./AimonResume-FrontendDeveloper.pdf' className='btn' download>
 						Download CV
 					</a>
 					<a href='#contact' className='btn'>
